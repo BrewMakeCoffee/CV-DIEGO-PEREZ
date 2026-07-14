@@ -4,15 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- ====== SEO / COMPARTIR (edita si cambia tu nombre o URL) ====== -->
   <title>Diego Pérez Pirela — Ingeniero Comercial | CV</title>
   <meta name="description" content="Currículum de Diego Andrés Pérez Pirela, Ingeniero Comercial y Licenciado en Economía y Administración de Empresas. Perfil internacional: Panamá, Chile y España." />
   <meta name="author" content="Diego Andrés Pérez Pirela" />
   <meta name="theme-color" content="#0f766e" />
 
-  <!-- Open Graph: cómo se ve al compartir el link en WhatsApp/LinkedIn -->
   <meta property="og:title" content="Diego Pérez Pirela — Ingeniero Comercial | CV" />
-  <meta property="og:description" content="Currículum profesional. Estrategia, operaciones y desarrollo de negocios." />
+  <meta property="og:description" content="Currículum profesional. Gestión, digitalización de procesos y análisis de datos." />
   <meta property="og:type" content="profile" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,15 +18,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
 
   <style>
-    /* ============================================================
-       PALETA Y VARIABLES — cambia aquí los colores de todo el sitio
-       ============================================================ */
     :root {
       --bg: #f6f7f5;
       --surface: #ffffff;
       --ink: #1a2421;
       --muted: #5b6b66;
-      --accent: #0f766e;      /* verde petróleo */
+      --accent: #0f766e;
       --accent-soft: #e3f1ee;
       --line: #e4e8e6;
       --radius: 16px;
@@ -62,11 +57,7 @@
 
     .wrap { max-width: var(--maxw); margin: 0 auto; }
 
-    /* ====== ENCABEZADO ====== */
-    header {
-      padding: 56px 0 28px;
-      text-align: center;
-    }
+    header { padding: 56px 0 28px; text-align: center; }
     .name {
       font-family: 'Fraunces', serif;
       font-size: clamp(2rem, 6vw, 3rem);
@@ -81,22 +72,15 @@
       font-size: clamp(.95rem, 2.6vw, 1.1rem);
     }
     .contact {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px 18px;
-      justify-content: center;
-      margin-top: 20px;
-      font-size: .9rem;
-      color: var(--muted);
+      display: flex; flex-wrap: wrap; gap: 8px 18px;
+      justify-content: center; margin-top: 20px;
+      font-size: .9rem; color: var(--muted);
     }
     .contact a { color: inherit; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
     .contact a:hover { color: var(--accent); }
     .contact svg { width: 15px; height: 15px; flex: none; }
 
-    /* ====== BOTONES DE ACCIÓN ====== */
-    .actions {
-      display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 26px;
-    }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 26px; }
     .btn {
       display: inline-flex; align-items: center; gap: 8px;
       padding: 10px 18px; border-radius: 999px;
@@ -109,7 +93,6 @@
     @media (prefers-color-scheme: dark) { .btn.primary { color: #06120f; } }
     .btn svg { width: 16px; height: 16px; }
 
-    /* ====== SECCIONES ====== */
     section { margin: 14px 0; }
     .card {
       background: var(--surface);
@@ -126,16 +109,12 @@
     }
     .section-title::after { content: ""; flex: 1; height: 1px; background: var(--line); }
 
-    .lead { font-size: 1.02rem; color: var(--ink); }
+    .lead { font-size: 1.02rem; }
     .lead .muted { color: var(--muted); }
 
-    /* ====== EXPERIENCIA / EDUCACIÓN (items) ====== */
     .item { padding: 16px 0; border-top: 1px solid var(--line); }
     .item:first-of-type { border-top: none; padding-top: 0; }
-    .item-head {
-      display: flex; justify-content: space-between; gap: 12px;
-      flex-wrap: wrap; align-items: baseline;
-    }
+    .item-head { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: baseline; }
     .item-title { font-weight: 600; font-size: 1.05rem; }
     .item-org { color: var(--accent); font-weight: 500; font-size: .95rem; }
     .item-date {
@@ -144,16 +123,12 @@
     }
     .item-sub { color: var(--muted); font-size: .88rem; font-style: italic; margin: 2px 0 8px; }
     .item ul { list-style: none; margin-top: 6px; }
-    .item li {
-      position: relative; padding-left: 18px; margin-bottom: 5px;
-      font-size: .92rem; color: var(--ink);
-    }
+    .item li { position: relative; padding-left: 18px; margin-bottom: 5px; font-size: .92rem; }
     .item li::before {
       content: ""; position: absolute; left: 2px; top: 11px;
       width: 5px; height: 5px; border-radius: 50%; background: var(--accent);
     }
 
-    /* ====== COMPETENCIAS / CHIPS ====== */
     .skill-group { margin-bottom: 14px; }
     .skill-group:last-child { margin-bottom: 0; }
     .skill-label { font-weight: 600; font-size: .9rem; margin-bottom: 8px; }
@@ -162,18 +137,16 @@
       background: var(--accent-soft); color: var(--accent);
       padding: 5px 12px; border-radius: 999px; font-size: .82rem; font-weight: 500;
     }
+    /* .key = chip resaltado. Se usa SOLO en las competencias digitales. */
+    .chip.key { background: var(--accent); color: #fff; }
+    @media (prefers-color-scheme: dark) { .chip.key { color: #06120f; } }
 
     .certs li { list-style: none; padding-left: 20px; position: relative; margin-bottom: 8px; font-size: .92rem; }
-    .certs li::before {
-      content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: 700;
-    }
+    .certs li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
 
-    footer {
-      text-align: center; padding: 30px 0 50px; color: var(--muted); font-size: .82rem;
-    }
+    footer { text-align: center; padding: 30px 0 50px; color: var(--muted); font-size: .82rem; }
     footer a { color: var(--accent); text-decoration: none; }
 
-    /* ====== IMPRESIÓN / GUARDAR COMO PDF ====== */
     @media print {
       body { background: #fff; color: #000; padding: 0; font-size: 12px; }
       .actions, footer { display: none; }
@@ -185,9 +158,6 @@
 <body>
 <div class="wrap">
 
-  <!-- ============================================================
-       ENCABEZADO  — datos de contacto
-       ============================================================ -->
   <header>
     <h1 class="name">Diego Andrés Pérez Pirela</h1>
     <p class="role">Ingeniero Comercial · Lic. en Economía y Administración de Empresas</p>
@@ -224,61 +194,31 @@
   </header>
 
   <!-- ============================================================
-       PERFIL PROFESIONAL
+       1 · PERFIL PROFESIONAL
        ============================================================ -->
   <section class="card">
     <h2 class="section-title">Perfil profesional</h2>
     <p class="lead">
-      Estudiante de Ingeniería Comercial en etapa final con perfil internacional forjado en tres países
-      (<strong>Panamá, Chile y España</strong>) y formación académica sólida en estrategia corporativa, dirección
-      de operaciones, planificación estratégica e innovación. Busco realizar mi práctica profesional en áreas de
-      <strong>estrategia, operaciones o desarrollo de negocios</strong>, donde pueda aportar análisis cuantitativo,
-      pensamiento estructurado y orientación a la mejora de procesos. Mi formación se complementa con experiencia en
-      entornos de alta demanda y un fuerte interés en <strong>automatización e inteligencia artificial</strong>
-      aplicadas a la gestión empresarial. <span class="muted">Bilingüe español–inglés (CEFR B2 · TOEIC).</span>
+      Estudiante de Ingeniería Comercial en etapa final (quinto año, UCN) con perfil internacional forjado en tres
+      países (<strong>Panamá, Chile y España</strong>) y formación académica sólida en estrategia corporativa, dirección
+      de operaciones, planificación estratégica e innovación. Complemento mi formación en gestión con habilidades
+      computacionales concretas —programación, análisis cuantitativo de datos y herramientas de inteligencia artificial
+      aplicadas a la productividad— junto con experiencia práctica en producción de contenido digital y gestión de
+      comunicaciones.
+    </p>
+    <p class="lead" style="margin-top:12px;">
+      Busco realizar mi práctica profesional en áreas donde pueda aportar análisis cuantitativo, pensamiento
+      estructurado y orientación a la <strong>digitalización y automatización de procesos</strong>, desarrollándome en
+      plataformas y herramientas de gestión dentro de un entorno laboral real.
+      <span class="muted">Bilingüe español–inglés (CEFR B2 · TOEIC).</span>
     </p>
   </section>
 
   <!-- ============================================================
-       EXPERIENCIA
-       👉 PARA AGREGAR UN EMPLEO NUEVO: copia un bloque <div class="item"> ... </div>
-          completo y pégalo debajo del primero. Cambia título, organización, fecha y viñetas.
+       2 · EXPERIENCIA — orden cronológico (presente → pasado)
        ============================================================ -->
   <section class="card">
     <h2 class="section-title">Experiencia</h2>
-
-    <!-- ↓↓↓ NUEVA EXPERIENCIA (deja este espacio listo para que lo completes) ↓↓↓
-    <div class="item">
-      <div class="item-head">
-        <div>
-          <div class="item-title">Cargo / Puesto</div>
-          <div class="item-org">Empresa — Ciudad, País</div>
-        </div>
-        <span class="item-date">mes año – mes año</span>
-      </div>
-      <div class="item-sub">Tipo de rol (opcional)</div>
-      <ul>
-        <li>Logro o responsabilidad principal.</li>
-        <li>Otro logro medible.</li>
-      </ul>
-    </div>
-    ↑↑↑ Descomenta (quita estas líneas) y rellena cuando tengas la experiencia nueva ↑↑↑ -->
-
-    <div class="item">
-      <div class="item-head">
-        <div>
-          <div class="item-title">Asistente de Operaciones (Part-time)</div>
-          <div class="item-org">Hipertrans Andina — Antofagasta, Chile</div>
-        </div>
-        <span class="item-date">Presente</span>
-      </div>
-      <div class="item-sub">Práctica profesional · UCN — Operador logístico para el grupo EPSA International (La Negra)</div>
-      <ul>
-        <li>Apoyo en operaciones de movimiento de carga pesada, sobredimensionada y ancha, y logística de camiones de cama baja.</li>
-        <li>Rol orientado a acumular horas de práctica profesional para la Universidad Católica del Norte, integrándome de forma progresiva al área de operaciones.</li>
-        <li>Coordinación dentro del rubro logístico minero-industrial de la región de Antofagasta.</li>
-      </ul>
-    </div>
 
     <div class="item">
       <div class="item-head">
@@ -320,8 +260,8 @@
       </div>
       <div class="item-sub">Empresa familiar</div>
       <ul>
-        <li>Elaboración de contenidos digitales y audiovisuales empresariales, desde la conceptualización hasta la entrega final, en el desarrollo de una academia virtual.</li>
-        <li>Coordinación de proyectos creativos aplicando herramientas de diseño y producción digital.</li>
+        <li>Desarrollo integral de una academia virtual: elaboración de contenidos digitales y audiovisuales empresariales, desde la conceptualización hasta la entrega final.</li>
+        <li>Generación de contenido para plataformas digitales y coordinación de proyectos creativos aplicando herramientas de diseño y producción digital.</li>
       </ul>
     </div>
 
@@ -343,7 +283,7 @@
   </section>
 
   <!-- ============================================================
-       EDUCACIÓN
+       3 · EDUCACIÓN
        ============================================================ -->
   <section class="card">
     <h2 class="section-title">Educación</h2>
@@ -357,7 +297,9 @@
         <span class="item-date">mar 2022 – dic 2026</span>
       </div>
       <ul>
-        <li>Quinto año. Formación integral en planificación estratégica de negocios: análisis del entorno competitivo y diagnóstico organizacional, formulación de estrategia corporativa, diseño de sistemas de control de gestión, evaluación de proyectos bajo criterios técnicos y económicos, y gestión de recursos (operaciones, finanzas, marketing y logística).</li>
+        <li>Quinto año. Formación integral en planificación estratégica de negocios: análisis del entorno competitivo y diagnóstico organizacional, formulación de estrategia corporativa y diseño de sistemas de control de gestión.</li>
+        <li>Evaluación de proyectos bajo criterios técnicos y económicos, y gestión de recursos organizacionales (operaciones, finanzas, marketing y logística).</li>
+        <li>Formación en Econometría con SPSS, base para el trabajo con instrumentos de medición y análisis de datos.</li>
       </ul>
     </div>
 
@@ -387,58 +329,7 @@
   </section>
 
   <!-- ============================================================
-       COMPETENCIAS
-       ============================================================ -->
-  <section class="card">
-    <h2 class="section-title">Competencias</h2>
-
-    <div class="skill-group">
-      <div class="skill-label">Técnicas</div>
-      <div class="chips">
-        <span class="chip">Gestión de procesos</span>
-        <span class="chip">Marketing digital</span>
-        <span class="chip">Producción audiovisual</span>
-        <span class="chip">Análisis de datos (SPSS, Excel)</span>
-        <span class="chip">Automatización de flujos (Asana)</span>
-        <span class="chip">Programación comercial (certificada)</span>
-      </div>
-    </div>
-
-    <div class="skill-group">
-      <div class="skill-label">Software</div>
-      <div class="chips">
-        <span class="chip">Excel (avanzado)</span>
-        <span class="chip">PowerPoint</span>
-        <span class="chip">SPSS</span>
-        <span class="chip">Python</span>
-        <span class="chip">C++</span>
-        <span class="chip">Herramientas de IA (Google AI)</span>
-      </div>
-    </div>
-
-    <div class="skill-group">
-      <div class="skill-label">Idiomas</div>
-      <div class="chips">
-        <span class="chip">Español (nativo)</span>
-        <span class="chip">Inglés — CEFR B2 · TOEIC</span>
-      </div>
-    </div>
-
-    <div class="skill-group">
-      <div class="skill-label">Habilidades blandas</div>
-      <div class="chips">
-        <span class="chip">Adaptabilidad intercultural</span>
-        <span class="chip">Liderazgo</span>
-        <span class="chip">Trabajo colaborativo</span>
-        <span class="chip">Aprendizaje continuo</span>
-        <span class="chip">Orientación al logro</span>
-        <span class="chip">Trabajo bajo presión</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       CERTIFICACIONES
+       4 · CERTIFICACIONES
        ============================================================ -->
   <section class="card">
     <h2 class="section-title">Certificaciones y formación adicional</h2>
@@ -454,6 +345,65 @@
       Diplomas y certificaciones verificables en
       <a href="https://linkedin.com/in/diegoperez11" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">linkedin.com/in/diegoperez11</a>.
     </p>
+  </section>
+
+  <!-- ============================================================
+       5 · COMPETENCIAS Y HABILIDADES
+       Solo el grupo "Digitales y computacionales" lleva chips resaltados (.key)
+       ============================================================ -->
+  <section class="card">
+    <h2 class="section-title">Competencias y habilidades</h2>
+
+    <div class="skill-group">
+      <div class="skill-label">Digitales y computacionales</div>
+      <div class="chips">
+        <span class="chip key">Python</span>
+        <span class="chip key">C++</span>
+        <span class="chip key">Programación comercial (certificada)</span>
+        <span class="chip key">Automatización de flujos de trabajo (Asana)</span>
+        <span class="chip key">Herramientas de IA y productividad (Google AI)</span>
+        <span class="chip key">Digitalización de procesos</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-label">Análisis de datos</div>
+      <div class="chips">
+        <span class="chip">SPSS (análisis estadístico · Econometría UCN)</span>
+        <span class="chip">Microsoft Excel (certificado avanzado)</span>
+        <span class="chip">Análisis de datos cuantitativos</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-label">Gestión y negocios</div>
+      <div class="chips">
+        <span class="chip">Gestión de procesos</span>
+        <span class="chip">Control de gestión</span>
+        <span class="chip">Marketing digital</span>
+        <span class="chip">Producción audiovisual</span>
+        <span class="chip">Microsoft PowerPoint (certificado)</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-label">Idiomas</div>
+      <div class="chips">
+        <span class="chip">Español (nativo)</span>
+        <span class="chip">Inglés — CEFR B2 · TOEIC</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-label">Habilidades blandas</div>
+      <div class="chips">
+        <span class="chip">Adaptabilidad intercultural</span>
+        <span class="chip">Liderazgo y trabajo colaborativo</span>
+        <span class="chip">Aprendizaje continuo</span>
+        <span class="chip">Proactividad y orientación al logro</span>
+        <span class="chip">Adaptabilidad bajo presión</span>
+      </div>
+    </div>
   </section>
 
   <footer>
